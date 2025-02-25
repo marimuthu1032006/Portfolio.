@@ -1,0 +1,188 @@
+/* General Styling for Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1E3A8A, #2563EB, #3B82F6); /* Blue gradient */
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite; /* Animation for background gradient */
+    color: white;
+    line-height: 1.6;
+    padding-top: 120px; /* Make space for the fixed header */
+}
+
+/* Entry Link Styling */
+.entry-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #3B82F6, #2563EB); /* Gradient background */
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-top: 50px; /* Space above */
+    text-align: center;
+}
+
+.entry-link:hover {
+    background: linear-gradient(135deg, #1E3A8A, #3B82F6);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.entry-link:active {
+    transform: scale(1);
+}
+
+/* Welcome Section */
+#welcome {
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 50px;
+    margin-top: 60px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+#welcome h1 {
+    font-size: 3.5em;
+    color: #2563EB;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#welcome p {
+    font-size: 1.5em;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Gradient animation for background */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1E3A8A, #2563EB, #3B82F6); /* Blue gradient */
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite; /* Animation for background gradient */
+    color: white;
+    line-height: 1.6;
+    padding-top: 120px;
+   
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 5px solid #2563EB;
+    height: 100px; /* Adjust header height */
+}
+
+/* Navbar */
+#nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#nav-bar ul li {
+    margin: 0 15px ;
+    margin-top: 5px;
+}
+
+#nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Hover effect on navbar links */
+#nav-bar ul li a:hover {
+    background: #3B82F6;
+    transform: scale(1.1);
+}
+
+/* Main Section */
+.main-section {
+    padding: 150px 200px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.main-section:hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animation for gradient background */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #3B82F6, #2563EB); /* Gradient background */
+    border-radius: 30px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    border: 3px solid #2563EB; /* Border color to match the button gradient */
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, #1E3A8A, #3B82F6); /* Lighter gradient on hover */
+    transform: scale(1.1); /* Slight scale increase on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+.cta-button:active {
+    transform: scale(1); /* Shrink the button on click */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+ 
